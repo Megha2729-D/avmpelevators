@@ -3205,7 +3205,7 @@ main {
         background: linear-gradient(90deg, #002636f7 0%, #003547d1 38%, #00354740 70%, #001f2b6b 100%), url("../images/banner-sm.webp") center/cover no-repeat
     }
 .testimonials{
-    
+
 }
     .container {
         width: calc(100% - 28px)
@@ -3240,9 +3240,9 @@ main {
         letter-spacing: -1px
     }
 
-    .hero-subtitle {
+    /* .hero-subtitle {
         font-size: 17px
-    }
+    } */
 
     .hero-description {
         font-size: 12px
