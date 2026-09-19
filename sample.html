@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="AVMP Elevators & Engineering provides reliable elevator maintenance, AMC, breakdown service, inspection and modernization solutions focused on safety, performance and dependable service.">
+    <title>Services | AVMP Elevators & Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <style>
+        /* =========================================
+           SERVICES PAGE
+        ========================================= */
+
+        .services-hero {
+            position: relative;
+            min-height: 280px;
+            padding-top: 65px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg, rgba(0, 29, 66, .94), rgba(0, 29, 66, .72)),
+                url("assets/images/breadcrumb-image.webp");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .services-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .services-hero-content {
+            padding: 65px 0;
+        }
+
+        .services-hero h1 {
+            color: #fff;
+            font-family: "Inter", sans-serif;
+            font-size: 48px;
+            line-height: 1.15;
+            font-weight: 800;
+            margin: 0 0 12px;
+        }
+
+        .services-hero .page_breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 14px;
+        }
+
+        .services-hero .page_breadcrumb li {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .services-hero .page_breadcrumb a {
+            color: #16b5ee;
+        }
+
+        .services-hero .separator {
+            color: rgba(255, 255, 255, .6);
+        }
+
+        .services-hero-subtitle {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* SERVICES INTRO */
+
+        .services-intro {
+            padding: 75px 0 55px;
+            background: #fff;
+        }
+
+        .services-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .service-label {
+            display: block;
+            color: #0076c9;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .services-intro h2 {
+            color: #082f63;
+            font-family: "Inter", sans-serif;
+            font-size: 32px;
+            line-height: 1.18;
+            font-weight: 800;
+            margin: 0 0 18px;
+        }
+
+        .services-intro h2 span {
+            color: #079be7;
+        }
+
+        .services-intro p {
+            color: #536783;
+            font-size: 13px;
+            line-height: 1.75;
+            margin-bottom: 12px;
+        }
+
+        .services-intro-image {
+            position: relative;
+        }
+
+        .services-intro-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .service-experience-box {
+            position: absolute;
+            left: 25px;
+            bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 13px 20px;
+            background: #062f61;
+            color: #fff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .18);
+        }
+
+        .service-experience-box i {
+            font-size: 28px;
+            color: #1bb8f0;
+        }
+
+        .service-experience-box strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .service-experience-box span {
+            display: block;
+            font-size: 10px;
+            color: rgba(255, 255, 255, .8);
+        }
+
+        /* SERVICE CARDS */
+
+        .services-section {
+            background: #effaff;
+            padding: 70px 0;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .section-heading .service-label {
+            margin-bottom: 8px;
+        }
+
+        .section-heading h2 {
+            color: #082f63;
+            font-family: "Inter", sans-serif;
+            font-size: 31px;
+            line-height: 1.2;
+            font-weight: 800;
+            margin: 0 0 12px;
+        }
+
+        .section-heading h2 span {
+            color: #079be7;
+        }
+
+        .section-heading p {
+            color: #536783;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            position: relative;
+            background: #fff;
+            padding: 30px 28px;
+            min-height: 295px;
+            border: 1px solid #e0edf4;
+            transition: all .35s ease;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 0;
+            background: #079be7;
+            transition: height .35s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0, 42, 80, .10);
+            border-color: #ccebf7;
+        }
+
+        .service-card:hover::before {
+            height: 100%;
+        }
+
+        .service-icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: #eaf8ff;
+            color: #078fdc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: #082f63;
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 800;
+            margin-bottom: 11px;
+        }
+
+        .service-card p {
+            color: #536783;
+            font-size: 12px;
+            line-height: 1.7;
+            margin: 0 0 17px;
+        }
+
+        .service-link {
+            color: #078bd7;
+            font-size: 11px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .service-link span {
+            font-size: 16px;
+            transition: transform .3s ease;
+        }
+
+        .service-card:hover .service-link span {
+            transform: translateX(5px);
+        }
+
+        /* SERVICE APPROACH */
+
+        .service-approach {
+            padding: 75px 0;
+            background: #fff;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .approach-image img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+        }
+
+        .approach-content h2 {
+            color: #082f63;
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .approach-content h2 span {
+            color: #079be7;
+        }
+
+        .approach-content>p {
+            color: #536783;
+            font-size: 13px;
+            line-height: 1.75;
+            margin-bottom: 25px;
+        }
+
+        .approach-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 17px 25px;
+        }
+
+        .approach-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+        }
+
+        .approach-item-icon {
+            width: 37px;
+            height: 37px;
+            flex: 0 0 37px;
+            border-radius: 50%;
+            background: #e9f8ff;
+            color: #078fda;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .approach-item h4 {
+            color: #082f63;
+            font-size: 12px;
+            font-weight: 800;
+            margin: 0 0 4px;
+        }
+
+        .approach-item p {
+            color: #65758b;
+            font-size: 10px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* MAINTENANCE PROCESS */
+
+        .process-section {
+            background: #effaff;
+            padding: 70px 0;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            margin-top: 45px;
+        }
+
+        .process-item {
+            position: relative;
+            padding: 0 25px;
+            text-align: center;
+            border-right: 1px solid #d5e5ed;
+        }
+
+        .process-item:first-child {
+            padding-left: 0;
+        }
+
+        .process-item:last-child {
+            border-right: 0;
+            padding-right: 0;
+        }
+
+        .process-number {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 16px;
+            background: #078edc;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            box-shadow: 0 7px 18px rgba(0, 142, 220, .2);
+        }
+
+        .process-item h3 {
+            color: #082f63;
+            font-family: "Inter", sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .process-item p {
+            color: #536783;
+            font-size: 11px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* CTA */
+
+        .services-cta {
+            position: relative;
+            background:
+                linear-gradient(rgba(0, 39, 82, .94), rgba(0, 39, 82, .94)),
+                url("assets/images/cta-bg.webp");
+            background-size: cover;
+            background-position: center;
+            padding: 45px 0;
+        }
+
+        .services-cta-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .services-cta-content {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .services-cta-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1bc1f5;
+            font-size: 35px;
+        }
+
+        .services-cta h2 {
+            color: #fff;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            margin: 0 0 5px;
+        }
+
+        .services-cta p {
+            color: rgba(255, 255, 255, .8);
+            font-size: 11px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .services-cta .site_butt {
+            white-space: nowrap;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 991px) {
+
+            .services-intro-grid,
+            .approach-grid {
+                gap: 35px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 35px;
+            }
+
+            .process-item:nth-child(2) {
+                border-right: 0;
+            }
+
+            .process-item:nth-child(3) {
+                border-top: 1px solid #d5e5ed;
+                padding-top: 30px;
+            }
+
+            .process-item:nth-child(4) {
+                border-top: 1px solid #d5e5ed;
+                padding-top: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .services-hero {
+                min-height: 220px;
+                padding-top: 60px;
+            }
+
+            .services-hero-content {
+                padding: 55px 0;
+            }
+
+            .services-hero h1 {
+                font-size: 35px;
+            }
+
+            .services-intro {
+                padding: 50px 0;
+            }
+
+            .services-intro-grid,
+            .approach-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .services-intro-image {
+                order: 2;
+            }
+
+            .services-intro-image img {
+                height: 280px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                min-height: auto;
+            }
+
+            .approach-image {
+                order: 2;
+            }
+
+            .approach-image img {
+                height: 280px;
+            }
+
+            .approach-list {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .process-item,
+            .process-item:nth-child(2),
+            .process-item:nth-child(3),
+            .process-item:nth-child(4) {
+                border-right: 0;
+                border-top: 0;
+                border-bottom: 1px solid #d5e5ed;
+                padding: 0 0 25px;
+            }
+
+            .process-item:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            .services-cta-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-hero h1 {
+                font-size: 30px;
+            }
+
+            .services-intro h2,
+            .approach-content h2 {
+                font-size: 26px;
+            }
+
+            .section-heading h2 {
+                font-size: 26px;
+            }
+
+            .service-experience-box {
+                left: 12px;
+                bottom: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- ==============================
+         HEADER
+    =============================== -->
+        <header class="main-header header-style-one" id="header">
+
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="top-left">
+                        <ul class="info-list">
+                            <li>
+                                <i class="bi bi-envelope text-white"></i>
+                                <a href="mailto:info@avmpelevators.com">
+                                    info@avmpelevators.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-geo text-white"></i>
+                                Kovilnagar, Srivilliputhur, Virudhunagar District,
+                                Tamil Nadu – 626125, India
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="top-right">
+                        <ul class="top-social-icon">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-box">
+                <div class="auto-container">
+
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.webp" alt="AVMP Elevators & Engineering"
+                                    title="AVMP Elevators & Engineering">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nav-outer">
+                        <nav class="nav main-menu">
+                            <ul class="navigation">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+
+                                <li class="current">
+                                    <a href="services.html">Services</a>
+                                </li>
+
+                                <li>
+                                    <a href="careers.html">Careers</a>
+                                </li>
+
+                                <li>
+                                    <a href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="outer-box">
+                        <div class="info-box">
+                            <a href="contact-us.html" class="butt_primary">
+                                Enquire Now <span>→</span>
+                            </a>
+                        </div>
+
+                        <div class="mobile-nav-toggler d-block d-lg-none">
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="auto-container">
+                <div class="mobile-menu">
+
+                    <div class="menu-backdrop"></div>
+
+                    <nav class="menu-box">
+
+                        <div class="upper-box">
+                            <div class="nav-logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.webp" alt="AVMP Elevators & Engineering">
+                                </a>
+                            </div>
+
+                            <div class="close-btn">
+                                <i class="bi bi-x"></i>
+                            </div>
+                        </div>
+
+                        <ul class="navigation clearfix d-block d-lg-none ps-0"></ul>
+
+                        <div class="content-box d-none d-lg-block">
+                            <h4 class="title">Our Services</h4>
+
+                            <p class="text">
+                                AVMP Elevators & Engineering provides reliable elevator
+                                maintenance, service and engineering solutions focused
+                                on safety and performance.
+                            </p>
+                        </div>
+
+                        <ul class="contact-list-one">
+
+                            <li>
+                                <div class="contact-info-box">
+                                    <i class="bi bi-telephone"></i>
+
+                                    <div>
+                                        <span class="title">Call Now</span>
+
+                                        <a href="tel:+919894490627">
+                                            +91 98944 90627
+                                        </a>
+                                        <br>
+
+                                        <a href="tel:+918489686954">
+                                            +91 8489686954
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="contact-info-box">
+                                    <span class="bi bi-envelope"></span>
+
+                                    <div>
+                                        <span class="title">
+                                            General Enquiries
+                                        </span>
+
+                                        <a href="mailto:info@avmpelevators.com">
+                                            info@avmpelevators.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="contact-info-box">
+                                    <span class="bi bi-envelope"></span>
+
+                                    <div>
+                                        <span class="title">
+                                            Service & Technical Support
+                                        </span>
+
+                                        <a href="mailto:support@avmpelevators.com">
+                                            support@avmpelevators.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="contact-info-box">
+                                    <span class="bi bi-geo-alt"></span>
+
+                                    <div>
+                                        <span class="title">Address</span>
+
+                                        Kovilnagar, Srivilliputhur,
+                                        Virudhunagar District,
+                                        <br>
+                                        Tamil Nadu – 626125, India
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <ul class="social-links mb-0">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- ==============================
+         MAIN
+    =============================== -->
+        <main>
+
+            <!-- Breadcrumb -->
+            <section class="services-hero">
+
+                <div class="container">
+
+                    <div class="services-hero-content">
+
+                        <ul class="page_breadcrumb">
+
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="separator">
+                                /
+                            </li>
+
+                            <li class="active">
+                                Services
+                            </li>
+
+                        </ul>
+
+                        <h1>
+                            Our Services
+                        </h1>
+
+                        <p class="services-hero-subtitle">
+                            Reliable Elevator Maintenance & Engineering Solutions
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Services Introduction -->
+            <section class="services-intro">
+
+                <div class="container">
+
+                    <div class="services-intro-grid">
+
+                        <div data-aos="fade-right" data-aos-duration="1000">
+
+                            <span class="service-label">
+                                Our Services
+                            </span>
+
+                            <h2>
+                                Keeping Your Elevators<br>
+                                <span>Safe, Reliable & Efficient</span>
+                            </h2>
+
+                            <p>
+                                At AVMP Elevators & Engineering, we provide professional
+                                elevator maintenance and engineering services designed
+                                to support safe and dependable elevator operation.
+                            </p>
+
+                            <p>
+                                Our services cover routine maintenance, AMC support,
+                                breakdown assistance, inspection and modernization,
+                                helping customers maintain elevator performance and
+                                address service requirements efficiently.
+                            </p>
+
+                            <div class="hero-buttons mt-4">
+
+                                <a href="contact-us.html" class="butt_primary">
+                                    Request Service
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="services-intro-image" data-aos="fade-left" data-aos-duration="1000">
+
+                            <img src="assets/images/about-1.webp" alt="AVMP elevator maintenance service">
+
+                            <div class="service-experience-box">
+
+                                <i class="bi bi-shield-check"></i>
+
+                                <div>
+                                    <strong>
+                                        Safety First
+                                    </strong>
+
+                                    <span>
+                                        Reliable technical service
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Main Services -->
+            <section class="services-section">
+
+                <div class="container">
+
+                    <div class="section-heading" data-aos="fade-up">
+
+                        <span class="service-label">
+                            What We Do
+                        </span>
+
+                        <h2>
+                            Complete Elevator
+                            <span>Service Solutions</span>
+                        </h2>
+
+                        <p>
+                            From preventive maintenance to emergency support and
+                            modernization, our services are focused on keeping your
+                            elevator system operating safely and reliably.
+                        </p>
+
+                    </div>
+
+                    <div class="services-grid">
+
+                        <!-- Service 01 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+
+                            <div class="service-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+
+                            <h3>
+                                Elevator Maintenance
+                            </h3>
+
+                            <p>
+                                Regular elevator maintenance helps identify potential
+                                issues early, maintain smooth operation and support
+                                reliable day-to-day performance.
+                            </p>
+
+                            <a href="contact-us.html" class="service-link">
+                                Enquire About Service
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Service 02 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+
+                            <div class="service-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+
+                            <h3>
+                                Annual Maintenance Contract
+                            </h3>
+
+                            <p>
+                                Our AMC service provides a structured maintenance
+                                approach to help customers keep elevators regularly
+                                inspected, serviced and maintained.
+                            </p>
+
+                            <a href="contact-us.html" class="service-link">
+                                Enquire About AMC
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Service 03 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+
+                            <div class="service-icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+
+                            <h3>
+                                Breakdown Service
+                            </h3>
+
+                            <p>
+                                When an elevator requires immediate attention, our
+                                breakdown service focuses on identifying the issue
+                                and providing the required technical support.
+                            </p>
+
+                            <a href="contact-us.html" class="service-link">
+                                Request Breakdown Support
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Service 04 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+
+                            <div class="service-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <h3>
+                                Elevator Inspection
+                            </h3>
+
+                            <p>
+                                Systematic inspection helps assess elevator condition,
+                                identify service requirements and support safe and
+                                dependable operation.
+                            </p>
+
+                            <a href="contact-us.html" class="service-link">
+                                Schedule Inspection
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Service 05 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+
+                            <div class="service-icon">
+                                <i class="bi bi-arrow-up-circle"></i>
+                            </div>
+
+                            <h3>
+                                Elevator Modernization
+                            </h3>
+
+                            <p>
+                                Modernization solutions can help improve elevator
+                                performance, reliability and functionality when
+                                existing systems require upgrading.
+                            </p>
+
+                            <a href="contact-us.html" class="service-link">
+                                Discuss Modernization
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Service 06 -->
+                        <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+
+                            <div class="service-icon">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </div>
+
+                            <h3>
+                                Technical Support
+                            </h3>
+
+                            <p>
+                                Our technical support helps customers address elevator
+                                service requirements with practical troubleshooting
+                                and engineering assistance.
+                            </p>
+
+                            <a href="contact-us.html" class="service-link">
+                                Contact Technical Team
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Service Approach -->
+            <section class="service-approach">
+
+                <div class="container">
+
+                    <div class="approach-grid">
+
+                        <div class="approach-image" data-aos="fade-right" data-aos-duration="1000">
+
+                            <img src="assets/images/about-2.webp" alt="AVMP elevator service technician">
+
+                        </div>
+
+                        <div class="approach-content" data-aos="fade-left" data-aos-duration="1000">
+
+                            <span class="service-label">
+                                Our Approach
+                            </span>
+
+                            <h2>
+                                Service Built Around<br>
+                                <span>Safety & Reliability</span>
+                            </h2>
+
+                            <p>
+                                Every elevator requires consistent attention to
+                                maintenance and service. Our approach is focused on
+                                understanding the equipment, identifying service
+                                requirements and delivering practical solutions.
+                            </p>
+
+                            <div class="approach-list">
+
+                                <div class="approach-item">
+
+                                    <div class="approach-item-icon">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Safety Focus
+                                        </h4>
+
+                                        <p>
+                                            Safety remains central to our service
+                                            approach.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="approach-item">
+
+                                    <div class="approach-item-icon">
+                                        <i class="bi bi-person-check"></i>
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Experienced Team
+                                        </h4>
+
+                                        <p>
+                                            Skilled professionals handle service
+                                            requirements.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="approach-item">
+
+                                    <div class="approach-item-icon">
+                                        <i class="bi bi-clock-history"></i>
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Prompt Support
+                                        </h4>
+
+                                        <p>
+                                            Timely technical assistance when required.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="approach-item">
+
+                                    <div class="approach-item-icon">
+                                        <i class="bi bi-clipboard-check"></i>
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Systematic Service
+                                        </h4>
+
+                                        <p>
+                                            Structured maintenance and inspection
+                                            practices.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Maintenance Process -->
+            <section class="process-section">
+
+                <div class="container">
+
+                    <div class="section-heading" data-aos="fade-up">
+
+                        <span class="service-label">
+                            Our Service Process
+                        </span>
+
+                        <h2>
+                            A Clear & Professional
+                            <span>Service Approach</span>
+                        </h2>
+
+                        <p>
+                            We follow a practical service approach to understand the
+                            elevator requirement, assess the system and provide the
+                            necessary technical support.
+                        </p>
+
+                    </div>
+
+                    <div class="process-grid">
+
+                        <div class="process-item" data-aos="fade-up" data-aos-delay="100">
+
+                            <div class="process-number">
+                                01
+                            </div>
+
+                            <h3>
+                                Understand
+                            </h3>
+
+                            <p>
+                                Understand the elevator, service requirement and
+                                customer concern.
+                            </p>
+
+                        </div>
+
+                        <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+
+                            <div class="process-number">
+                                02
+                            </div>
+
+                            <h3>
+                                Inspect
+                            </h3>
+
+                            <p>
+                                Inspect the equipment and identify maintenance or
+                                technical requirements.
+                            </p>
+
+                        </div>
+
+                        <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+
+                            <div class="process-number">
+                                03
+                            </div>
+
+                            <h3>
+                                Service
+                            </h3>
+
+                            <p>
+                                Carry out the required maintenance, repair or
+                                technical service.
+                            </p>
+
+                        </div>
+
+                        <div class="process-item" data-aos="fade-up" data-aos-delay="400">
+
+                            <div class="process-number">
+                                04
+                            </div>
+
+                            <h3>
+                                Support
+                            </h3>
+
+                            <p>
+                                Continue supporting customers with dependable
+                                elevator service and maintenance.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Contact CTA -->
+            <section class="services-cta">
+
+                <div class="container">
+
+                    <div class="services-cta-inner">
+
+                        <div class="services-cta-content">
+
+                            <div class="services-cta-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Need Reliable Elevator Service?
+                                </h2>
+
+                                <p>
+                                    Get in touch with AVMP Elevators & Engineering
+                                    for professional maintenance and technical support.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <a href="contact-us.html" class="site_butt">
+                            Contact Us
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- ==============================
+         FOOTER
+    =============================== -->
+        <footer class="footer">
+
+            <div class="container footer-grid">
+
+                <div class="footer-brand">
+
+                    <img src="assets/images/logo.webp" alt="AVMP Elevators & Engineering">
+
+                    <p>
+                        Reliable elevator maintenance and engineering services focused
+                        on safety, performance and customer satisfaction.
+                    </p>
+
+                    <div class="socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="careers.html">
+                        Careers
+                    </a>
+
+                    <a href="contact-us.html">
+                        Contact
+                    </a>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>
+                        Our Services
+                    </h4>
+
+                    <a href="services.html">
+                        Elevator Maintenance
+                    </a>
+
+                    <a href="services.html">
+                        AMC Services
+                    </a>
+
+                    <a href="services.html">
+                        Breakdown Service
+                    </a>
+
+                    <a href="services.html">
+                        Elevator Inspection
+                    </a>
+
+                    <a href="services.html">
+                        Modernization
+                    </a>
+
+                </div>
+
+                <div class="footer-contact">
+
+                    <h4>
+                        Contact Us
+                    </h4>
+
+                    <a href="tel:+919894490627">
+                        <i class="bi bi-telephone-fill pe-2"></i>
+                        +91 98944 90627
+                    </a>
+
+                    <a href="tel:+918489686954">
+                        <i class="bi bi-telephone-fill pe-2"></i>
+                        +91 84896 86954
+                    </a>
+
+                    <a href="mailto:info@avmpelevators.com">
+                        <i class="bi bi-envelope-fill pe-2"></i>
+                        info@avmpelevators.com
+                    </a>
+
+                    <a href="mailto:support@avmpelevators.com">
+                        <i class="bi bi-envelope-fill pe-2"></i>
+                        support@avmpelevators.com
+                    </a>
+
+                    <p class="d-flex">
+                        <i class="bi bi-geo-fill pe-2"></i>
+                        Kovilnagar, Srivilliputhur,
+                        <br>
+                        Virudhunagar District,
+                        <br>
+                        Tamil Nadu - 626125, India
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="container copyright">
+
+                <p>
+                    © <span id="year"></span>
+                    AVMP Elevators & Engineering.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/918489686954?text=Hello%20AVMP%20Elevators%20%26%20Engineering%2C%20I%20would%20like%20to%20enquire%20about%20your%20elevator%20services."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with AVMP Elevators on WhatsApp">
+
+        <i class="bi bi-whatsapp"></i>
+
+    </a>
+
+    <!-- Back To Top -->
+    <button class="back-top" id="backTop">
+        ↑
+    </button>
+
+    <!-- JS -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            /* AOS */
+            if (typeof AOS !== "undefined") {
+                AOS.init({
+                    duration: 900,
+                    once: true,
+                    offset: 80
+                });
+            }
+
+            /* Back To Top */
+            const backTop = document.getElementById("backTop");
+
+            if (backTop) {
+
+                window.addEventListener("scroll", function () {
+
+                    if (window.scrollY > 250) {
+                        backTop.classList.add("show");
+                    } else {
+                        backTop.classList.remove("show");
+                    }
+
+                });
+
+                backTop.addEventListener("click", function () {
+
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+
+                });
+
+            }
+
+            /* Current Year */
+            const year = document.getElementById("year");
+
+            if (year) {
+                year.textContent = new Date().getFullYear();
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
