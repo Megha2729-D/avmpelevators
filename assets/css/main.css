@@ -1971,7 +1971,7 @@ main {
     position: absolute;
     left: 0;
     top: 0;
-    width: 55%;
+    width: 54%;
     height: 100%;
     border-radius: 8px;
     overflow: hidden
@@ -1986,8 +1986,8 @@ main {
 
 .about-small-img {
     position: absolute;
-    width: 38%;
-    height: 48%;
+    width: 37%;
+    height: 46%;
     right: 4%;
     border-radius: 8px;
     overflow: hidden;
